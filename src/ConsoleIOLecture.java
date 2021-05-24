@@ -25,5 +25,32 @@ public class ConsoleIOLecture {
 
         System.out.printf("Your number: %d%n", num);
 
+//exercise
+
+        System.out.println("Hello user! Give me a NO decimal number");
+        int userNum = scanner.nextInt();
+        System.out.println("You number is : " + userNum);
+
+        System.out.println("Please enter the first word please");
+        String firstWord = scanner.next();
+        System.out.println("please enter the second word");
+        String secondWord = scanner.next();
+        System.out.println("Finally, please enter the last word");
+        String lastWord = scanner.next();
+        System.out.println("yours words are\n " + firstWord + "\n " + secondWord + "\n " + lastWord + "\n");
+
+        System.out.println("Now, enter a sentence please");
+        scanner.nextLine();
+
+        String userSentence = scanner.nextLine();
+        System.out.println("Your sentence was: " + userSentence);
+
+        System.out.println("Enter a height value");
+        int height = scanner.nextInt();
+        System.out.println("enter a width value");
+        int width = scanner.nextInt();
+        int perimeter = height * 2 + width * 2;
+        int area = height * width;
+        System.out.println("The perimeter is: " + perimeter + " and the area is: " + area);
     }
 }
