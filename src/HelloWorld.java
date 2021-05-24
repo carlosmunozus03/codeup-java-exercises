@@ -64,6 +64,70 @@ public class HelloWorld {
         System.out.println(iAmAnInt);
 
         System.out.println((char) 44);
+
+        //exercise
+
+        int myFavoriteNumber = 23;
+        System.out.println(myFavoriteNumber);
+
+        String myString = "Hello World From Java!";
+        System.out.println(myString);
+//=== ERRORS
+//        char myStringChar = "This is a character from myString in Java!";
+//        myString = 3.14159;
+//        long myNumber;
+//        System.out.println(myNumber);
+//        long myNumber = 3.14;
+        long myNumber = 123L;
+        System.out.println(myNumber);
+
+        long myNUmber123 = 123;
+        System.out.println(myNUmber123);
+
+//        float myFloatNumber = 3.14;
+//        System.out.println(myFloatNumber);
+
+        //2 ways for print this
+        float myNumberF = 3.14F;
+        System.out.println(myNumberF);
+
+        double myNumberD = 3.14;
+        System.out.println(myNumberD);
+
+        // post increment
+        int x = 5;
+        System.out.println(x++); // 5
+        System.out.println(x); // 6
+
+        //pre increment
+        int y = 5;
+        System.out.println(++y); // 6
+        System.out.println(y); // 6
+
+//        var class;
+
+        String theNumberThree = "three";
+        Object o = theNumberThree;
+//        int three = (int) o; // error  cannot be cast to class
+//        int three = (int) "three"; // error incompatible type
+
+        int myX = 4;
+        myX = myX + 5;
+        System.out.println(myX); // 9
+
+        int myx = 3;
+        int myy = 4;
+        myy = myy * myx;
+        System.out.println(myy); // 12
+
+        int myxx = 10;
+        int myyy = 2;
+        myxx = myxx / myyy;
+        myyy = myyy - myxx;
+        System.out.println(myyy); // -3
+
+//        Integer.MAX_VALUE;
+
     }
 }
 
