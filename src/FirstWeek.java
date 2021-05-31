@@ -107,5 +107,11 @@ public class FirstWeek {
         e -= d;
         System.out.println(e);
 
+        // IO
+
+        // Scanner class for get user information
+
+
+
     }
 }
