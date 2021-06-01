@@ -120,11 +120,19 @@ public class FirstWeek {
         //Logic operators || && !=
         //if (numbers)
         //String comparison .equals or .equalsIgnoreCase (comparison a string)
+        //.starsWith / endWith (comparison string)
         // Control Structures if() / else switch
         // while / do while / for loop
         //break and continue
 
-
+        //string methods
+        //char charAt(int index)
+        //int indexOf(String subString)
+        //int lastIndexOf(String subString)
+        //int length()
+        //String replace(String pattern, String replacement)
+        //String substring(int beginIndex[, int endIndex])
+        //String toLowerCase() / String toUpperCase() / String trim()
 
 
 
