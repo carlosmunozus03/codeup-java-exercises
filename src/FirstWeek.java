@@ -110,6 +110,21 @@ public class FirstWeek {
         // IO
 
         // Scanner class for get user information
+        //sout + tab (print in console)
+        //scanner.next(print only first string until space)
+        // scanner.nextLine(print all line)
+
+// Declarations, controls, comparison and loops
+
+        //boolean expresion
+        //Logic operators || && !=
+        //if (numbers)
+        //String comparison .equals or .equalsIgnoreCase (comparison a string)
+        // Control Structures if() / else switch
+        // while / do while / for loop
+        //break and continue
+
+
 
 
 

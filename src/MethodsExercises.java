@@ -19,12 +19,6 @@ public class MethodsExercises {
         return a / b;
     }
 
-
-    public static void main(String[] args) {
-        getInteger(1, 10);
-        factorial(1, 10);
-    }
-
     public static int getInteger(int min, int max) {
         int num = 8;
         Scanner scanner = new Scanner(System.in);
@@ -69,6 +63,11 @@ public class MethodsExercises {
             System.out.println("Have a great day!");
         }
         return ghost;
+    }
+
+    public static void main(String[] args) {
+        getInteger(1, 10);
+        factorial(1, 10);
     }
 
 }
