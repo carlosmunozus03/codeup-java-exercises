@@ -1,53 +1,69 @@
-//public class Person {
-//    // instance variables
-//    private String name;
-//    private String email;
-//    private String phoneNumber;
-//
-//    // constructor: construct a Person copying in the data into the instance variables
-//    public Person(String initName, String initEmail, String initPhone) {
-//        name = initName;
-//        email = initEmail;
-//        phoneNumber = initPhone;
-//    }
-//
-//    // Print all the data for a person
-//    public void print() {
-//        System.out.println("Name: " + name);
-//        System.out.println("Email: " + email);
-//        System.out.println("Phone Number: " + phoneNumber);
-//    }
-//
-//    // main method for testing
-//    public static void main(String[] args) {
-//        // call the constructor to create a new person
-//        Person p1 = new Person("Carlos", "carlos@gmail.com", "333-444-5555");
-//        // call p1's print method
-//        p1.print();
-//        Person p2 = new Person("Javier", "javier@gmail.com", "111-222-6677");
-//        p2.print();
-//    }
-//}
-
 public class Person {
     private String name;
 
-
     public String getName() {
 //TODO: return the person's name
-        return String.format(name);
+        return name;
     }
 
     public void setName(String name) {
 //TODO: change the name property to the passed value
+        this.name = name;
     }
 
     public void sayHello() {
 //TODO: print a message to the console using the person's name
+        System.out.println("Hello there " + name);
     }
 
-    public static void main(String[] args) {
-        Person p1 = new Person();
-        Person p2 = new Person();
+//TODO: The class should have a constructor that accepts a `String` value and sets the person's name to the passed string.
+
+    public Person(String name) {
+        this.name = name;
     }
+
+// TODO: Create a `main` method on the class that creates a new `Person` object tests the above methods.
+
+    public static void main(String[] args) {
+//        // testing constructor
+//        Person p = new Person("Rudy");
+//        // should see Rudy as name.
+//        System.out.println(p.getName());
+//        p.setName("Rudolph");
+//        // should see Rudolph as name.
+//        System.out.println(p.getName());
+//        // should see "Hello there Rudolph"
+//        p.sayHello();
+
+//        Person person1 = new Person("John");
+//        Person person2 = new Person("John");
+//        // guess is true?
+//        System.out.println(person1.getName().equals(person2.getName()));
+//        // guess is false?
+//        System.out.println(person1 == person2);
+//
+//        System.out.println(person1);
+//        System.out.println(person2);
+
+//        Person person1 = new Person("John");
+//        Person person2 = person1;
+//        // expect true
+//        System.out.println(person1 == person2);
+//
+//        System.out.println(person1);
+//        System.out.println(person2);
+
+        Person person1 = new Person("John");
+        Person person2 = person1;
+        System.out.println(person1.getName());
+        System.out.println(person2.getName());
+        person2.setName("Jane");
+        System.out.println(person1.getName());
+        System.out.println(person2.getName());
+
+        System.out.println(person1);
+        System.out.println(person2);
+
+    }
+
 }
