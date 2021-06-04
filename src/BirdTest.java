@@ -1,4 +1,3 @@
-
 public class BirdTest {
     public static void main(String[] args) {
 //        Bird cardinal = new Bird();

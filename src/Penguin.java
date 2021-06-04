@@ -1,4 +1,3 @@
-
 public class Penguin extends Bird {
     // override MakeNoise()
     public void makeNoise() {
