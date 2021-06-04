@@ -36,5 +36,9 @@ public class ConsoleExercises {
         int area = length * width;
         int perimeter = (2 * width) + (2 * length);
         System.out.printf("Length entered: %d meters.%nWidth entered: %d meters.%nArea of room: %d meters squared.%nPerimeter of room: %d meters.%n", length, width, area, perimeter);
+        System.out.println("Enter the height");
+        int height = Integer.parseInt(scanner.nextLine());
+        int volume = width * length * height;
+        System.out.printf("Height entered: %d meters.%s Total volume is: %d ", height, volume);
     }
 }

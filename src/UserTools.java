@@ -70,7 +70,7 @@
 //}
 
 // Only using the below main method to demonstrate.
-// At the end of the day, we are running our methods in UserManager.java
+// At the end of the day, we are running our methods in UserManager
 
 //    public static void main(String[] args) {
 //        User testUser = new User();
