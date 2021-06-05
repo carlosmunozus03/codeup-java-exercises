@@ -5,7 +5,7 @@ public class ControlFlowExercises {
     public static void main(String[] args) {
         // 1. Loop Basics a. While
 //        int i = 5;
-//        while (i <= 15){
+//        while (i <= 15) {
 //            if (i < 15) {
 //                System.out.print(i + " ");
 //            } else {
@@ -43,6 +43,33 @@ public class ControlFlowExercises {
 //            System.out.println(i);
 //        }
 
+        // FizzBuzz
+//        for (int i = 1; i < 100; i++) {
+//            if (i % 5 == 0 && i % 3 == 0) {
+//                System.out.println("FizzBuzz");
+//            } else if (i % 5 == 0) {
+//                System.out.println("Buzz");
+//            } else if (i % 3 == 0) {
+//                System.out.println("Fizz");
+//            } else {
+//                System.out.println(i);
+//            }
+//        }
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a number");
+        int userInput = scanner.nextInt();
+        System.out.println("Here is your table!");
+        System.out.println("number | squared | cubed");
+        System.out.println("------ | ------- | -----");
+        for (int i = 1; i <= userInput; i++) {
+            System.out.println(i + "      | " + i * i + "        | " + i * i * i);
+        }
+        System.out.println("Do you wan to continue? (Y/N)");
+        String userAnswer = scanner.next();
+        if (userAnswer.equalsIgnoreCase("y") || userAnswer.equalsIgnoreCase("yes"){
+            System.out.println("qwe");
+        }
         // 2. The PIN Problem
 
 //        Scanner scanner1 = new Scanner(System.in);
@@ -90,28 +117,28 @@ public class ControlFlowExercises {
 
 
         // 4. Convert given number grades into letter grades
-
-        Scanner scanner1 = new Scanner(System.in);
-        String userChoice = "y";
-        while (!userChoice.equals("n")) {
-            System.out.println("Enter the student's numerical grade: ");
-            byte grade = scanner1.nextByte();
-            char letterGrade;
-            if (grade > 0 && grade <= 59) {
-                letterGrade = 'F';
-            } else if (grade > 59 && grade <= 66) {
-                letterGrade = 'D';
-            } else if (grade > 66 && grade <= 79) {
-                letterGrade = 'C';
-            } else if (grade > 79 && grade <= 87) {
-                letterGrade = 'B';
-            } else {
-                letterGrade = 'A';
-            }
-            System.out.println("The letter grade is: " + letterGrade);
-            System.out.println("Would you like to enter another grade?(y/n)");
-            userChoice = scanner1.next();
-        }
+//
+//        Scanner scanner1 = new Scanner(System.in);
+//        String userChoice = "y";
+//        while (!userChoice.equals("n")) {
+//            System.out.println("Enter the student's numerical grade: ");
+//            byte grade = scanner1.nextByte();
+//            char letterGrade;
+//            if (grade > 0 && grade <= 59) {
+//                letterGrade = 'F';
+//            } else if (grade > 59 && grade <= 66) {
+//                letterGrade = 'D';
+//            } else if (grade > 66 && grade <= 79) {
+//                letterGrade = 'C';
+//            } else if (grade > 79 && grade <= 87) {
+//                letterGrade = 'B';
+//            } else {
+//                letterGrade = 'A';
+//            }
+//            System.out.println("The letter grade is: " + letterGrade);
+//            System.out.println("Would you like to enter another grade?(y/n)");
+//            userChoice = scanner1.next();
+//        }
 
     }
 }

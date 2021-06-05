@@ -39,6 +39,7 @@ public class ConsoleExercises {
         System.out.println("Enter the height");
         int height = Integer.parseInt(scanner.nextLine());
         int volume = width * length * height;
-        System.out.printf("Height entered: %d meters.%s Total volume is: %d ", height, volume);
+        System.out.println("Height entered: " + height + " meters.\nTotal volume is: " + volume);
+        System.out.println(scanner.useDelimiter("\n"));
     }
 }
