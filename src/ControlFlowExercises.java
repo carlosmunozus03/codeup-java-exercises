@@ -1,4 +1,5 @@
 
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class ControlFlowExercises {
@@ -56,21 +57,26 @@ public class ControlFlowExercises {
 //            }
 //        }
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter a number");
-        int userInput = scanner.nextInt();
-        System.out.println("Here is your table!");
-        System.out.println("number | squared | cubed");
-        System.out.println("------ | ------- | -----");
-        for (int i = 1; i <= userInput; i++) {
-            System.out.println(i + "      | " + i * i + "        | " + i * i * i);
-        }
-        System.out.println("Do you wan to continue? (Y/N)");
-        String userAnswer = scanner.next();
-        if (userAnswer.equalsIgnoreCase("y") || userAnswer.equalsIgnoreCase("yes"){
-            System.out.println("qwe");
-        }
-        // 2. The PIN Problem
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Enter a number");
+//        do {
+//            int userInput = scanner.nextInt();
+//            System.out.println("Here is your table!");
+//            System.out.println("number | squared | cubed");
+//            System.out.println("------ | ------- | -----");
+//            for (int i = 1; i <= userInput; i++) {
+//                System.out.println(i + "      | " + i * i + "        | " + i * i * i);
+//            }
+//            System.out.println("Do you wan to continue? (Y/N)");
+//            String userAnswer = scanner.next();
+//            if (userAnswer.equals("y")) {
+//                boolean userWantsToContinue = true;
+//            } else {
+//                break;
+//            }
+//            while (userWntsToContinue) ;
+
+//        2. The PIN Problem
 
 //        Scanner scanner1 = new Scanner(System.in);
 //        final int PIN = 12345;
@@ -139,6 +145,30 @@ public class ControlFlowExercises {
 //            System.out.println("Would you like to enter another grade?(y/n)");
 //            userChoice = scanner1.next();
 //        }
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a numerical grade between 0 and 100");
+        int userInput = scanner.nextInt();
+        if (userInput >= 88 && userInput <= 100) {
+            System.out.println("Grade A");
+        } else if (userInput >= 80 && userInput <= 87) {
+            System.out.println("Grade B");
+        } else if (userInput >= 67 && userInput <= 79) {
+            System.out.println("Grade C");
+        } else if (userInput >= 60 && userInput <= 66) {
+            System.out.println("Grade D");
+        } else if (userInput >= 0 && userInput <= 59) {
+            System.out.println("Grade F");
+        } else {
+            Scanner scanner1 = new Scanner(System.in);
+            System.out.println("Do you want to continue? (y/n)");
+            String userAnswer = scanner.next();
+            if (userAnswer.equalsIgnoreCase("n")) {
+                System.out.println("Have a great day!");
+            }
+            System.out.println("Enter a numerical grade between 0 and 100");
+
+        }
 
     }
 }
