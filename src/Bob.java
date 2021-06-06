@@ -10,26 +10,46 @@ import java.util.Scanner;
  * He answers 'Whatever.' to anything else.
  */
 
+//public class Bob {
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Hey, my name's Bob... My mom said you wanted to talk to me, or something... Whatever...");
+//        String response = "";
+//        while (!response.equalsIgnoreCase("QUIT")) {
+//            System.out.println("What do you want?");
+//            response = sc.nextLine();
+//            if (response.isEmpty()) {
+//                System.out.println("Fine. Be that way!");
+//            } else if (response.endsWith("?")) {
+//                System.out.println("Sure.");
+//            } else if (response.endsWith("!")) {
+//                System.out.println("Whoa, chill out!");
+//            } else if (response.equalsIgnoreCase("quit")) {
+//                System.out.println("Finally...");
+//            } else {
+//                System.out.println("Whatever.");
+//            }
+//        }
+//        System.out.println("I'm out of here...");
+//    }
+//}
 public class Bob {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Hey, my name's Bob... My mom said you wanted to talk to me, or something... Whatever...");
-        String response = "";
-        while (!response.equalsIgnoreCase("QUIT")) {
-            System.out.println("What do you want?");
-            response = sc.nextLine();
-            if (response.isEmpty()) {
-                System.out.println("Fine. Be that way!");
-            } else if (response.endsWith("?")) {
-                System.out.println("Sure.");
-            } else if (response.endsWith("!")) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Hey my name is Bob.... you want to talk with me or something, lets go!");
+        String answer = "";
+        while (!answer.equalsIgnoreCase("QUIT")) {
+            System.out.println("what do you want?");
+            answer = scanner.nextLine();
+            if (answer.endsWith("?")) {
+                System.out.println("Sure");
+            } else if (answer.endsWith("!")) {
                 System.out.println("Whoa, chill out!");
-            } else if (response.equalsIgnoreCase("quit")) {
-                System.out.println("Finally...");
+            } else if (answer.isEmpty()) {
+                System.out.println("Fine. Be that way!");
             } else {
                 System.out.println("Whatever.");
             }
         }
-        System.out.println("I'm out of here...");
     }
 }
