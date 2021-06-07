@@ -1,4 +1,4 @@
-public class MethodLecture {
+public class MethodsLecture {
     //write functions here
 
     public static void sayHello() {
