@@ -25,21 +25,22 @@ public class Student {
     }
 
     // returns the average of the students grades
-    public int getGradeAverage() {
-        int x = 0;
-        for (int number : grades) {
-            x = x + number;
+    public double getGradeAverage() {
+        double x = 0;
+        for (double grade : grades) {
+            x = x + grade;
         }
         return x / grades.size();
     }
 
     public static void main(String[] args) {
-        Student test = new Student("Buddy");
-        test.addGrade(5);
-        test.addGrade(10);
-        test.addGrade(15);
+        Student buddy = new Student("Buddy");
+        buddy.addGrade(5);
+        buddy.addGrade(10);
+        buddy.addGrade(15);
+        buddy.addGrade(20);
 
-        System.out.println(test.getName());
-        System.out.println(test.getGradeAverage());
+        System.out.println(buddy.getName());
+        System.out.println(buddy.getGradeAverage());
     }
 }
