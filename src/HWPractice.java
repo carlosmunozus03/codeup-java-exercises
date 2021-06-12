@@ -35,5 +35,9 @@ public class HWPractice {
         System.out.println(e);
         int maxNUmber = Integer.MAX_VALUE;
         System.out.println(maxNUmber);
+        double maxDouble = Double.MAX_VALUE;
+        System.out.println(maxDouble);
+        float maxFloat = Float.MAX_VALUE;
+        System.out.println(maxFloat);
     }
 }
