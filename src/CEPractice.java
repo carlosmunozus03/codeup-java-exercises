@@ -48,11 +48,11 @@ public class CEPractice {
         System.out.println("--------------------");
         float area = userLength * userWidth;
         float perimeter = 2 * userWidth + 2 * userLength;
-        float volume = userVolume * userLength * userWidth;
+        double volume = userVolume * userLength * userWidth;
         System.out.println("Area: " + area);
         System.out.println("Perimeter: " + perimeter);
-        System.out.println("Volume: " + volume);
-        System.out.println("--------------------");
+        System.out.printf("Volume: %.2f", volume);
+        System.out.println("\n--------------------");
         scanner.useDelimiter("\n");
     }
 }
