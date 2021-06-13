@@ -36,13 +36,23 @@ public class CEPractice {
         //Calculate the perimeter and area of Codeup's classrooms.
 
         System.out.println("Enter a rectangle length value");
-        int userLength = Integer.parseInt(scanner.nextLine());
+        float userLength = Float.parseFloat(scanner.nextLine());
         System.out.println("Enter a rectangle width value");
-        int userWidth = Integer.parseInt(scanner.nextLine());
+        float userWidth = Float.parseFloat(scanner.nextLine());
+        System.out.println("Enter a rectangle volume value");
+        float userVolume = Float.parseFloat(scanner.nextLine());
+        System.out.println("--------------------");
         System.out.println("Length: " + userLength);
         System.out.println("Width: " + userWidth);
-        System.out.println("\nArea: " + userLength * userWidth);
-        System.out.println("Perimeter: " + (2 * userLength) + (2 * userWidth));
-
+        System.out.println("Volume: "+ userVolume);
+        System.out.println("--------------------");
+        float area = userLength * userWidth;
+        float perimeter = 2 * userWidth + 2 * userLength;
+        float volume = userVolume * userLength * userWidth;
+        System.out.println("Area: " + area);
+        System.out.println("Perimeter: " + perimeter);
+        System.out.println("Volume: " + volume);
+        System.out.println("--------------------");
+        scanner.useDelimiter("\n");
     }
 }
