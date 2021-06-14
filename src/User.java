@@ -1,5 +1,3 @@
-package OopLecture;
-
 public class User {
 
     // setting up our fields for the User class
