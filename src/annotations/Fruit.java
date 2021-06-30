@@ -1,7 +1,7 @@
-
 package annotations;
+
 @SuppressWarnings("all")
-public class Fruit implements Food{
+public class Fruit implements Food {
     private String flavor;
 
     @Deprecated

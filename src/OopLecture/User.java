@@ -1,3 +1,5 @@
+package OopLecture;
+
 public class User {
 
     // setting up our fields for the User class
@@ -8,10 +10,7 @@ public class User {
     private boolean isLoggedIn = false;
 
     // empty Constructor method for the User class.
-    public User() {
-    }
-
-    ;
+    public User() {};
 
     // overloaded Constructor method
     public User(String username, String password, String email) {
@@ -19,7 +18,6 @@ public class User {
         this.password = password;
         this.email = email;
     }
-
     // overloaded Constructor method
     public User(int id, String username, String password, String email, boolean isLoggedIn) {
         this.id = id;
@@ -39,7 +37,7 @@ public class User {
         this.username = username;
     }
 
-    public String getPassword() {
+    public String getPassword(){
         return password;
     }
 

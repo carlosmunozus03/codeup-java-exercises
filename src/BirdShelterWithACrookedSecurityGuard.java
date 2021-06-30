@@ -1,4 +1,3 @@
-
 public class BirdShelterWithACrookedSecurityGuard extends BirdShelter {
     // this will not work because the method in the superclass is final
 //    public void securityProcedures(){
@@ -7,7 +6,7 @@ public class BirdShelterWithACrookedSecurityGuard extends BirdShelter {
 //        alarmsArmed = false;
 //    }
 
-    public void securityProcedures(String guardName, int duration) {
+    public void securityProcedures(String guardName, int duration){
         camerasOn = false;
         guardsAlert = false;
         alarmsArmed = false;

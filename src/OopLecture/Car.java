@@ -1,3 +1,4 @@
+package OopLecture;
 
 import java.util.Scanner;
 
@@ -6,7 +7,6 @@ public class Car {
     public String model;
     public int year;
     public String color;
-
     public void run() {
         System.out.println("The car is running.");
     }

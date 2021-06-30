@@ -4,12 +4,12 @@ public class Penguin extends Bird {
     // cannot be reassigned
 
     // override MakeNoise()
-    public void makeNoise() {
+    public void makeNoise(){
         System.out.println(this.getName() + " goes honk honk!");
     }
 
     // override move()
-    public void move() {
+    public void move(){
         System.out.println(this.getName() + " goes waddle waddle");
     }
 }

@@ -9,6 +9,9 @@ public class Person {
         this.lastName = lastName;
     }
 
+    public Person(String sophia) {
+    }
+
     public String getName() {
         return String.format("%s %s", firstName, lastName);
     }

@@ -10,8 +10,8 @@ public class StringsLecture {
         String bob = "Uncle Bob";
         System.out.println("Hey David, who is your favorite surviving uncle?");
         String maybeBob = scanner.nextLine();
-        System.out.println("User answered with correct answer AND capitalization: " + bob.equals(maybeBob));
-        System.out.println("User answered with correct answer: " + bob.equalsIgnoreCase(maybeBob));
+        System.out.println("OopLecture.User answered with correct answer AND capitalization: " + bob.equals(maybeBob));
+        System.out.println("OopLecture.User answered with correct answer: " + bob.equalsIgnoreCase(maybeBob));
 
         // Compare the start and end of Strings
         String david = "David";
