@@ -1,46 +1,65 @@
 package grades;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class Student {
-    //Properties
-    private String studentName;
-    private ArrayList<Integer> grades = new ArrayList<>();
+    private String name;
+    private List<Integer> grades = new ArrayList<>();
+    private Map<String, String> attendance = new HashMap<>();
 
-    // constructor
-    Student(String name) {
-        this.studentName = name;
+    public Student() {
+    }
 
+    public Student(String name) {
+        this.name = name;
     }
 
     // returns the student's name
     public String getName() {
-        return studentName;
+        return this.name;
     }
 
     // adds the given grade to the grades property
     public void addGrade(int grade) {
-        grades.add(grade);
-
+        this.grades.add(grade);
     }
 
     // returns the average of the students grades
     public double getGradeAverage() {
-        double x = 0;
-        for (double grade : grades) {
-            x = x + grade;
+        int average = 0;
+        int length = grades.size();
+        for (int grade : grades) {
+            average += grade;
         }
-        return x / grades.size();
+        average /= length;
+        return average;
     }
 
-    public static void main(String[] args) {
-        Student buddy = new Student("Buddy");
-        buddy.addGrade(5);
-        buddy.addGrade(10);
-        buddy.addGrade(15);
-        buddy.addGrade(20);
-
-        System.out.println(buddy.getName());
-        System.out.println(buddy.getGradeAverage());
+    public void recordAttendance(String date, String value) {
+        if (value.equalsIgnoreCase("a")) {
+            this.attendance.putIfAbsent(date, "A");
+        } else if (value.equalsIgnoreCase("p")) {
+            this.attendance.putIfAbsent(date, "P");
+        } else {
+            System.out.println("Student can only be \"A\"bsent or \"P\"resent...");
+        }
     }
+
+    public void attendancePercentage() {
+        List<String> absences = new ArrayList<>();
+        for (String date : attendance.keySet()) {
+            if (attendance.get(date).equalsIgnoreCase("A")) {
+                absences.add(date);
+            }
+        }
+        double average = (double) (attendance.size() - absences.size()) / attendance.size();
+        average *= 100;
+        System.out.printf("%nDays absent: %d" +
+                        "%nAttendance percentage: %.2f %n"
+                , absences.size(), average);
+    }
+
 }
