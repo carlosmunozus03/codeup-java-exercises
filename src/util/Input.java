@@ -114,6 +114,4 @@ public class Input {
             return getDouble(min, max);
         }
     }
-
-
 }

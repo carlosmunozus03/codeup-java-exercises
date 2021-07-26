@@ -1,18 +1,23 @@
-class BirdShelter {
-    public void shelterSounds(Bird[] birdsOfTheShelter) {
-        for (int i = 0; i < birdsOfTheShelter.length; i++) {
-            birdsOfTheShelter[i].makeNoise();
-        }
-    }
+public class BirdShelterTest {
+    public static void main(String[] args) {
+        // polymorphic array
+        // polymorphic means many shapes
+        Bird[] birds = new Bird[3];
+        birds[0] = new Finch();
+        birds[0].setName("Lesser Goldfinch");
+        birds[1] = new Duck();
+        birds[1].setName("Mallard");
+        birds[2] = new Penguin();
+        birds[2].setName("Emperor Penguin");
 
-    boolean camerasOn;
-    boolean alarmsArmed;
-    boolean guardsAlert;
+//        for (int i = 0; i < birds.length; i++){
+//            birds[i].makeNoise();
+//        }
 
-    // this method cannot be overridden because it is marked final
-    public final void securityProcedures() {
-        camerasOn = true;
-        guardsAlert = true;
-        alarmsArmed = true;
+        BirdShelter healingWings = new BirdShelter();
+        healingWings.shelterSounds(birds);
+
+        BirdLover audubonBob = new BirdLover();
+        audubonBob.takeBirdToVet(birds[1]);
     }
 }
